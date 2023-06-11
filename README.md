@@ -136,9 +136,23 @@ https://blog.csdn.net/weixin_46272577/article/details/128295509
 
 https://github.com/Shangyizhou/A-Tiny-Network-Library/blob/main/%E9%A1%B9%E7%9B%AE%E8%AE%B2%E8%A7%A3/
 
+### HTTP(HyperText Transform Protocal)超文本链接传输协议详解
+1. HTTP服务器：相当于一个中转站，在用户端和客户端之间传递信息，但是又有一些独特的功能：
+   >负载均衡：当Web应用程序或API的访问量较大，单个服务器可能无法承受所有的请求。HTTP服务器可以通过负载均衡的方式将请求分发到多个服务器上，以提高系统可用性和性能。
+
+   >缓存：HTTP服务器可以对请求进行缓存，以减少对Web应用程序或API的请求次数，提高响应速度和性能。
+
+   >安全性：HTTP服务器可以对请求进行过滤、验证和授权，以确保请求的安全性和合法性。
+
+   >日志记录：HTTP服务器可以记录请求和响应的日志，以便进行监控和分析。
+
+   >网络拓扑：HTTP服务器可以作为Web用程序或API的前置节点，将请求从公网转发到内部网络，以保护内部网络的安全性。
 
 ### 友情鸣谢
 1. #### @linyacool | WebServer
 2. #### 《MuduoManual》
-3. Reactor模式的应用
-4. #### muduo实践脑图汇总
+3. #### 知乎 & 简书 | Reactor模式 
+4. #### 掘金 | muduo实践脑图汇总
+5. #### 知乎 | 深入理解HTTP协议 
+
+> https://zhuanlan.zhihu.com/p/45173862

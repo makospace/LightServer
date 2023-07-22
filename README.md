@@ -71,66 +71,6 @@
 
 shared_ptr的循环引用：如果存在循环引用，即两个或多个对象相互持有对方的shared_ptr，那么它们都无法被释放，因为它们的引用计数永远不会变为0。这时候，可以将其中一个shared_ptr改为weak_ptr，这样它不会增加对象的引用计数
 
-### 如何使用CMake：
-CMake是一个跨平台的开源构建工具，可以帮助开发人员管理和构建项目。以下是使用CMake构建项目的步骤：
-
-1. 创建一个源代码目录，包含项目的所有源文件和头文件。
-
-2. 在源代码目录中创建一个CMakeLists.txt文件，该文件包含构建项目所需的所有指令和配置。
-
-3. 在CMakeLists.txt文件中指定项目名称和版本号：
-
-```
-project(MyProject VERSION 1.0.0)
-```
-
-4. 指定要编译的源文件和头文件：
-
-```
-add_executable(MyProject main.cpp foo.cpp bar.cpp)
-```
-
-5. 添加所需的库或依赖项：
-
-```
-find_package(Boost REQUIRED)
-target_link_libraries(MyProject Boost::boost)
-```
-
-6. 指定编译选项和标志：
-
-```
-set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-```
-
-7. 指定构建目录：
-
-```
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
-```
-
-8. 在构建目录中运行CMake：
-
-```
-cd build
-cmake ..
-```
-
-9. 编译项目：
-
-```
-make
-```
-
-10. 运行项目：
-
-```
-./MyProject
-```
-
-以上是使用CMake构建项目的基本步骤，可以根据项目需求进行调整和修改
-CMake根据CMakeLists.txt生成不同平台下的Makefile文件，make根据Makefile文件编译连接代码
-
 GCC是GUN的编译工具集，可以编译多种语言，gcc是c++的编译器（一般用大小写区分）
 
 ## Webserver介绍
